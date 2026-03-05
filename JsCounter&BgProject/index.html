@@ -26,8 +26,27 @@
 
       <section>
         <h2>Change Background</h2>
-        <button  id="colorBtn">Change Background Color</button>
-        <button  onclick="alert('i am inline js ')">Click me </button>
+        <button id="colorBtn">Change Background Color</button>
+        <button onclick="alert('i am inline js ')">Click me</button>
+      </section>
+
+      <section>
+        <h2>Increment by 5 (Internal JS)</h2>
+        <p id="countFive">0</p>
+        <button id="increaseFiveBtn">Increase by 5</button>
+      </section>
+
+      <section>
+        <h2>Increment by 2 (Inline JS)</h2>
+        <p id="countTwo">0</p>
+        <button
+          onclick="
+            let value = document.getElementById('countTwo');
+            value.textContent = Number(value.textContent) + 2;
+          "
+        >
+          Increase by 2
+        </button>
       </section>
     </main>
 
@@ -35,8 +54,18 @@
       <p>© 2026 My Website | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js">
+    <script src="script.js"></script>
 
+    <script>
+      let countFive = 0;
+
+      const countFiveDisplay = document.getElementById("countFive");
+      const increaseFiveBtn = document.getElementById("increaseFiveBtn");
+
+      increaseFiveBtn.addEventListener("click", function () {
+        countFive += 5;
+        countFiveDisplay.textContent = countFive;
+      });
     </script>
   </body>
 </html>
