@@ -36,18 +36,7 @@
         <button id="increaseFiveBtn">Increase by 5</button>
       </section>
 
-      <section>
-        <h2>Increment by 2 (Inline JS)</h2>
-        <p id="countTwo">0</p>
-        <button
-          onclick="
-            let value = document.getElementById('countTwo');
-            value.textContent = Number(value.textContent) + 2;
-          "
-        >
-          Increase by 2
-        </button>
-      </section>
+      
     </main>
 
     <footer>
@@ -63,7 +52,7 @@
       const increaseFiveBtn = document.getElementById("increaseFiveBtn");
 
       increaseFiveBtn.addEventListener("click", function () {
-        countFive += 5;
+        countFive = countFive + 5;
         countFiveDisplay.textContent = countFive;
       });
     </script>
