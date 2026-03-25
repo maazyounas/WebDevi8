@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Grid Items */
+.box {
+    background-color: steelblue;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
