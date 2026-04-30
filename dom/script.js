@@ -1,9 +1,11 @@
 // Select elements from DOM
 const title = document.getElementById("title");
 const description = document.getElementById("description");
+
 const changeTextBtn = document.getElementById("changeTextBtn");
 const changeColorBtn = document.getElementById("changeColorBtn");
 const addElementBtn = document.getElementById("addElementBtn");
+
 const container = document.getElementById("container");
 
 
