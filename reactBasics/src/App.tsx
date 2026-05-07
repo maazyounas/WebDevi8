@@ -5,7 +5,7 @@ import EffectExample from "./components/states/effect";
 import MemoExample from "./components/states/memo";
 import CallbackExample from "./components/states/callback";
 import ReducerExample from "./components/states/reducer";
-import UseRef from './components/states/Useref';
+import UseRef from './components/states/UseRef';
 import { useContext } from "react";
 import { AppContext } from "./components/states/context";
 
